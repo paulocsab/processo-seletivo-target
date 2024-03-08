@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respostas Processo Seletivo Target - Programa de Estágio 2024</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1> Respostas do Processo Seletivo Target - Programa de Estágio 2024</h1>
+            <span>(Código se encontra no arquivo script.js)</span>
+        </header>
+        <section>
+            <h2>1 - </h2>
+            <p>Observe o trecho do código abaixo: </p>
+            
+            <div class="code-snippet">
+                <code>
+                    int INDICE = 13, SOMA = 0, K = 0; <br><br>
+                    enquanto K < INDICE faça { <br>
+                        K = K + 1; <br>
+                        SOMA = SOMA + K; <br>
+                    } <br><br>
+                    imprimir(SOMA);
+                </code>
+            </div>
+            
+            <p>Ao final do processamento, qual será o valor da variável SOMA?</p>
+            
+            <div class="resposta">
+                <h3>Resposta: </h3>
+                <span id="resultado-soma"></span>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>2 - </h2>
+            <p>Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que desejar onde, informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado pertence ou não a sequência.</p>
+            <input type="text" id="valor-fibonacci">
+            <button type="button" id="btn-fibonacci">Gerar Sequência</button>
+
+            <div class="resposta">
+                <h3>Resposta: </h3>
+                <span id="resultado-fibonacci"></span>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>3 - </h2>
+            <p>Descubra a lógica e complete o próximo elemento:</p>
+            <ul>
+                <li>a) 1, 3, 5, 7, <b>9</b></li>
+                <li>b) 2, 4, 8, 16, 32, 64, <b>128</b></li>
+                <li>c) 0, 1, 4, 9, 16, 25, 36, <b>49</b></li>
+                <li>d) 4, 16, 36, 64, <b>100</b></li>
+                <li>e) 1, 1, 2, 3, 5, 8, <b>13</b></li>
+                <li>f) 2, 10, 12, 16, 17, 18, 19, <b>200</b></li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>4 - </h2>
+            <p>
+                Você está em uma sala com três interruptores, cada um conectado a uma lâmpada em uma sala diferente. 
+                Você não pode ver as lâmpadas da sala em que está, mas pode ligar e desligar os interruptores quantas vezes quiser. 
+                Seu objetivo é descobrir qual interruptor controla qual lâmpada.
+            </p>
+            <br>
+            <p>Como você faria para descobrir, usando apenas duas idas até uma das salas das lâmpadas, qual interruptor controla cada lâmpada?</p>
+            <div class="resposta">
+                <h3>Resposta: </h3>
+                <p>
+                    Você pode ligar o interruptor 1 e esperar um tempo antes de desliga-lo, depois é só ligar o interruptor 2 e ir para uma das salas 
+                    com lâmpada, se a lâmpada estiver desligada mas estiver quente ao toque quer dizer que interruptor 1 acendou esta lâmpada, se não, 
+                    quer dizer que interruptor 3 acende esta lâmpada ou se a lâmpada estiver ligada, quer dizer que o interruptor 2 acende a lâmpada. 
+                    Depois é só ir para a outra sala e fazer a mesma verificação considerando o resultado da sala anterior e o interruptor da última 
+                    sala é descoberto por processo de eliminação.
+                </p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>5 - </h2>
+            <p>Escreva um programa que inverta os caracteres de um string.</p>
+            <br>
+            <h4>IMPORTANTE</h4>
+            <p>a) Essa string pode ser informada através de qualquer entrada de sua preferência ou pode ser previamente definida no código;</p>
+            <p>b) Evite usar funções prontas, como, por exemplo, reverse;</p>
+            <br>
+            <label for="string">Digite uma String:</label>
+            <input type="text" id="string">
+            <button type="button" id="btn-inverter">Inverter String</button>
+            <div class="resposta">
+                <h3>Resposta: </h3>
+                <span id="resultado-string"></span>
+            </div>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
